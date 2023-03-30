@@ -38,8 +38,8 @@ body {
 button {
   cursor: pointer;
   border: none;
-  color: white;
-  background-color: #1a9de5;
+  color: black;
+  background-color: #00f5ff;
   padding: 10px;
   border-radius: 2.5px;
   transition: 0.5s ease-out;
