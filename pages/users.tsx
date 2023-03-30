@@ -48,6 +48,7 @@ const Users = ({ users, total }: Props) => {
       title="Users | Next.js + TypeScript App"
       content="This is the list of users fetched from an API using Next.js and TypeScript."
     >
+      {isLoading && <Loader />}
       <div className={styles.container}>
         <Link href="/">Home</Link>
         <List items={usersList} />
@@ -57,7 +58,6 @@ const Users = ({ users, total }: Props) => {
           disabled={isLoadMoreDisabled}
         >
           Load more
-          {isLoading && <Loader />}
         </button>
       </div>
     </Layout>
